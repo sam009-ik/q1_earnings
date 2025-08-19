@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1
+					<p>Email: 24ds2000110@ds.study.iitm.ac.in</p>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Slide 2
+
+						- Bullet point 1
+						- Bullet point 2
+
+						---
+
+						## Next Slide
+
+						```python
+						def hello():
+							print("Hello, World!")
+						```
+					</textarea>
+				</section>
+				<section>
+					<h2>Key Points</h2>
+					<ul>
+						<li class="fragment">First point</li>
+						<li class="fragment">Second point</li>
+						<li class="fragment fade-up">Animated point</li>
+					</ul>
+				</section>
+				<!-- Math equations using MathJax -->
+				<section>
+					<h2>Statistical Formula</h2>
+					\[P(A|B) = \frac{P(B|A)P(A)}{P(B)}\]
+				</section>
+				<section>
+					<h2>Slide Title</h2>
+					<p>Visible content</p>
+					<aside class="notes">Speaker notes visible in presenter view</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+			});
+		</script>
+	</body>
+</html>
